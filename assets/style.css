@@ -1,0 +1,172 @@
+
+:root {
+	/* Colors */
+	--red: hsl(0, 100%, 74%);
+	--green: hsl(154, 59%, 51%);
+	--white: #f9f9f9e5;
+
+	/* Accent */
+	--blue: hsla(337, 90%, 50%, 0.171);
+
+	/* Neutral */
+	--dark-blue: hsl(249, 10%, 26%);
+	--dark-green: hsl(154, 50%, 40%);
+	--grayish-blue: hsl(255, 9%, 91%);
+}
+
+body {
+	background-image: url("../images/CNY_Artwork-en.jpg");
+	font-family: "Poppins", sans-serif;
+	height: 90vh;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 70%;
+	margin: 5em auto;
+}
+
+.title {
+	font-size: 3em;
+	font-weight: 700;
+	color: #8ff10df8;
+}
+
+.info {
+	font-weight: 400;
+	width: 80%;
+	color: #f112ae;
+}
+
+.section {
+	flex: 1;
+}
+
+/* stylisation de mon titre de formulaire de contact*/
+
+.accent {
+	background-color: var(--blue);
+	color: var(--white);
+	text-align: center;
+	padding: 1em 1.5em;
+	border-radius: 1em;
+	background:linear-gradient( to bottom right,rgba(63,81,181,1) 0%, rgba(171,71,188 ,1) 70%);
+    box-shadow: 1px 1px 30px rgba(81,45,168 ,1);
+}
+
+.accent .bold {
+	font-weight: 700;
+}
+
+/*fin de la personnalisation de mon titre de formulaire */
+.form {
+	background-color: rgb(249, 244, 250 , .5);
+	border-radius: 1em;
+	margin-top: 2em;
+	padding: 2em 2em;
+	box-shadow: 0px 9px 5px 0px #2e2e2e40;
+}
+
+.form-input {
+	margin: 1em 0px;
+}
+/*mon button personnalisé */
+.input {
+	text-transform: uppercase;
+	background-color: var(--green);
+	border: none !important;
+	color: var(--white);
+	margin-bottom: 1em;
+	text-align: center;
+	padding: 1.5em 1.5em;
+	border-radius: 0.5em;
+	box-shadow: 0px 5px 0px 0px var(--dark-green);
+	letter-spacing: 0.2em;
+	font-weight: 500;
+	font-size: 1em;
+	outline: none;
+}
+.input:hover{
+	color: aqua;
+	background-color: #f112ae;
+}
+/*fin de la personnalisation de button */
+
+.footer-info {
+	font-size: 0.8em;
+	color: var(--grayish-blue);
+	text-align: center;
+}
+
+.bold-red {
+	font-weight: 700;
+	color: var(--red);
+	text-decoration: none;
+}
+
+input {
+	width: 100%;
+}
+/* ici on personnalise les inputs */
+input[type="text"],
+[type="email"],
+[type="password"] {
+	width: 100%;
+	font-size: 1em;
+	padding: 12px 20px;
+	margin: 20px 0 5px 0;
+	display: inline-block;
+	background-color: rgba(151, 108, 206, 0.438);
+	color: aqua;
+	border: 3px solid rgba(81, 212, 69, 0.973);
+	border-radius: 4px;
+	box-sizing: border-box;
+	height: 50px;
+}
+
+input:not(:placeholder-shown) {
+	border: 0.1em solid var(--blue);
+}
+
+.input:active {
+	background-color: var(--green);
+	box-shadow: 0 2px #666;
+	transform: translateY(4px);
+}
+
+/*fin de la personnalisation */
+
+.error-response {
+	font-style: oblique;
+	font-size: 0.8em;
+	margin: 0;
+	text-align: right;
+	color: var(--red);
+}
+
+.error {
+	border: 0.1em solid var(--red) !important;
+}
+
+footer {
+	text-align: center;
+
+}
+
+
+@media only screen and (max-width: 1000px) {
+	.container {
+		display: inherit;
+		flex-wrap: wrap;
+	}
+	.title{
+		text-align: center;
+		margin-left: +60px;
+	}
+	.info{
+		text-align: center;
+		margin-left: +70px;
+	}
+}

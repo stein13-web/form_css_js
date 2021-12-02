@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+		<link rel="stylesheet" href="./assets/style.css" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<title>Création d'un Formulaire</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+	</head>
+	<body>
+		<div class="container">
+			<div class="section card-left">
+				<h1 class="title">CYBERPUNK 2077</h1>
+
+				<p class="info">
+					Bienvenue étranger , envoi nous ta demande de pièces pour
+					ton amélioration corporelle =)
+				</p>
+			</div>
+
+			<div class="section">
+				<div class="accent">
+					<span class="bold">Formulaire de Contact</span>
+				</div>
+
+				<div class="form">
+					<form>
+						<div class="form-label">
+							<input
+								type="text"
+								name="firstname"
+								id="firstname"
+								placeholder="FirstName"
+								aria-label="firstname"
+							/>
+							<p class="error-response"></p>
+						</div>
+
+						<div class="form-label">
+							<input
+								type="text"
+								name="lastname"
+								id="lastname"
+								placeholder="LastName"
+								aria-label="lastname"
+							/>
+							<p class="error-response"></p>
+						</div>
+
+						<div class="form-label">
+							<input
+								type="email"
+								name="email"
+								id="email"
+								placeholder="Email Address"
+								aria-label="email"
+							/>
+							<p class="error-response"></p>
+						</div>
+
+						<div class="form-label">
+							<input
+								type="password"
+								name="password"
+								id="password"
+								placeholder="Password"
+								aria-label="password"
+							/>
+							<p class="error-response"></p>
+						</div>
+
+						<div class="form-input">
+							<input
+								type="submit"
+								class="input"
+								value="Envoyer Mes Informations"
+							/>
+						</div>
+						<div class="footer-info">
+							Vous n'avez pas les droits sur cette maquette
+							<a href="#" class="bold-red">Terms and Services</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<p class="attribution">
+				Made By <a href="https://github.com/stein13-web">stein13-web</a>
+			</p>
+		</footer>
+	</body>
+	<script src="assets/main.js" defer></script>
+</html>
